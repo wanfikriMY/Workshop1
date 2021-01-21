@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Bio</title>
+</head>
+<body>
+		<style>
+    body{
+      background-image: url('bg.jpg');
+    }
+
+ div{
+
+  width: 1000px;
+  border: 15px;
+  padding: 50px;
+  margin: 5px; 
+  font-size: 30px;
+}
+.button {
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 3px 1px;
+  cursor: pointer;
+  top:180%;
+  left:43.5%;
+  position:absolute;
+
+}
+.tittle{
+  background-color: white;
+  width: 200px;
+  border: 15px;
+  padding: 50px;
+  margin: 5px; 
+  font-size: 20px;
+
+}
+
+h3{
+  color:green;
+  background-color: lightgrey;
+  width: 300px;
+}
+	</style>
+
+  <h4><center><div class="tittle">MY FAVOURITE AUDIO AND VIDEO</div><center></h4>
+
+<div style="width:400px; margin:auto; position:relative;">
+<audio controls>
+  <source src="music.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+</iframe>
+</div>
+<br><br>
+<hr><hr>
+
+<div style="width:500px; margin:auto; left:190px; top:-50px; position:relative;">
+
+<svg width="130" height="100">
+  <circle cx="50" cy="50" r="40"
+  stroke="green" stroke-width="4" fill="yellow" />
+Sorry, your browser does not support inline SVG.
+</svg>
+
+ </div>
+
+<div style="width:700px; margin:auto; left:-5px; top:-90px; position:relative;background-color: grey">
+  <canvas id="myCanvas" width="700" height="200"
+style="border:1px solid #d3d3d3;">
+Your browser does not support the canvas element.
+</canvas>
+
+<script>
+var canvas = document.getElementById("myCanvas");
+var ctx=canvas.getContext("2d");
+ctx.font="20px Comic Sans MS";
+ctx.fillStyle = "red";
+ctx.textAlign = "center";
+ctx.fillText("Life is a full circle, widening until it joins the circle motions of the infinite.", canvas.width/2, canvas.height/2);
+</script>
+
+
+</div>
+
+<input class="button" onclick="window.location='index.html'" value="BACK"/>
+
+</body>
+</html>

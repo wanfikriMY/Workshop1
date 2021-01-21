@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Bio</title>
+  <script type="text/javascript">
+    function myConfirm(){
+      var x=5*5; 
+x=prompt("What is 12 x 5?"); 
+while (x != 60) 
+{ 
+alert("Wrong answer"); 
+x=prompt("What is 5 x 5?",0); 
+} 
+document.write("Correct, the answer is " + x)
+if(document.write)
+{
+  window.location="content.html"; 
+}
+    }
+  </script>
+</head>
+<body>
+	<style>
+    body{
+      background-image: url('bg.jpg');
+    }
+		img {
+ position: absolute;
+  top: 1%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  
+  width:250px;
+  height:300px;
+
+}
+
+h1{
+  
+  font-size: 45px;
+  font-family:'Handlee',cursive;
+ 
+}
+.button {
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 3px 1px;
+  cursor: pointer;
+}
+
+.seeme{
+
+  top:80%;
+  left:25.5%;
+  position:absolute;
+
+}
+
+.myfav {
+    top:80%;
+  left:43.5%;
+  position:absolute;
+
+}
+
+.feedback {
+    top:80%;
+  left:61.5%;
+  position:absolute;
+
+}
+
+.back {
+    top:90%;
+  left:40.5%;
+  position:absolute;
+}
+  .submit{
+ display: block;
+  width: 100%;
+  padding: 14px 28px;
+  background-color: blue;
+  border: none;
+  color: white;
+
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  
+  cursor: pointer;
+  
+}
+
+	</style>
+  <br>
+<h1><center>MY BIOGRAPHY</center></h1>
+<img align="center" src="image.jpeg" width="200" height="200">
+<div class="seeme">
+<input class="button" onClick="myConfirm();" value="SEE ME"/>
+</div>
+<div class="myfav">
+  <input class="button" onclick="window.location='favourites.html'" value="MY FAVOURITES "/>
+  </div>
+  <div class="feedback">
+  <input class="button" onclick="window.location='feedback.html'" value="FEEDBACK"/>
+  </div>
+  <div class="back">
+  <input class="submit" onclick="window.location='http://localhost/MHS/aboutus.php'" value="MEDICAL HEALTHCARE SYSTEM"/>
+  </div>
+</body>
+</html>

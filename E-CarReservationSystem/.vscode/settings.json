@@ -1,0 +1,13 @@
+{
+    "sqltools.connections": [
+        {
+            "askForPassword": false,
+            "database": "ecar",
+            "dialect": "MySQL",
+            "name": "vsc",
+            "port": 3306,
+            "server": "localhost",
+            "username": "root"
+        }
+    ]
+}

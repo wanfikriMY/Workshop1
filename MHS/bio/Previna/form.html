@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MySite</title>
+  <script type="text/javascript"> 
+function myConfirm1(){ 
+var answer = confirm("Your feedback is recorded and you are about to leave the current page. Are you sure you want to proceed?"); 
+if(answer) 
+{ window.location="final.html"; } 
+else 
+ { } 
+} 
+
+function myConfirm2(){ 
+var answer = confirm("You will be redirected to the Twitter page. Are you sure you want to proceed?"); 
+if(answer) 
+{ window.location="https://twitter.com/previna_mano?s=08"; } 
+else 
+ { } 
+} 
+
+function testbutton(form){
+
+    chosen = "";
+    len = document.testform.rad.length;
+for (i = 0; i <len; i++) 
+{ if (document.testform.rad[i].checked) 
+ { chosen = document.testform.rad[i].value; } }
+ if ((testform.rad[0].checked==false)&& 
+ (testform.rad[1].checked==false)&& 
+ (testform.rad[2].checked==false)&&
+ (testform.rad[3].checked==false)&&
+ (testform.rad[4].checked==false)&&
+ (testform.rad[5].checked==false)&&
+ (testform.rad[6].checked==false)&&
+ (testform.rad[7].checked==false)&&
+ (testform.rad[8].checked==false)&&
+ (testform.rad[9].checked==false))
+ { alert("The fields are not chosen"); }
+ else { alert("Thank you for rating my page."); }
+}
+
+function validate1()
+{
+var empt = document.testform.comment.value;
+if (empt === "")
+{
+alert("Please input a value");
+return false;
+}
+else 
+{
+alert('Thank you for the feedback.');
+return true; 
+}
+}
+
+function validate()
+{
+var empt = document.testform.feedbacks2.value;
+if (empt === "")
+{
+alert("Please input a value");
+return false;
+}
+else 
+{
+alert('Thank you for the ID. Do follow my Twitter page.');
+return true; 
+}
+}
+
+
+
+</script>
+  <style>
+  body
+    {
+      font-family:'Handlee',cursive;
+      margin:0;
+      background-image: url('bj.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;  
+      background-size: cover;
+    }
+
+  .rating_scale {
+  margin: auto;
+  width: 24%;
+  border: 3px solid green;
+  padding: 10px;
+  background-color: lightgray;
+  }
+    h1{
+      font-family: Impact, Charcoal, sans-serif;
+      background-color: rgba(0,0,0,0.5);
+    color: white;
+
+    }
+    .feedbacks{
+    
+  max-width: 500px;
+  margin: auto;
+  padding: 8px;
+  text-align: center;
+  height:100px;
+  color: white;
+}
+  .back
+    {
+      position:absolute;
+      top:137%;
+      left:46.5%;
+    }
+.button1
+{
+   position:absolute;
+      top:35%;
+      left:57.5%;
+}
+.button2
+{
+   position:absolute;
+      top:65%;
+      left:57.5%;
+}
+.button3
+{
+   position:absolute;
+      top:97%;
+      left:57.5%;
+}
+    input[type=button]
+    {
+      background:none;
+        color:red;
+        background: transparent;
+        background-color: white;
+        border-color: black;
+        padding: 6px 4px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+
+     input[type=submit]
+    {
+      background:none;
+        color:blue;
+        background: transparent;
+        background-color: grey;
+        border-color: black;
+        padding: 6px 4px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+ #div1, #div2 {
+  
+  width: 100px;
+  height: 70px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+
+}
+
+
+</style>
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+<body>
+
+<br>
+<form name="testform" method="post">
+<h1><center><p>HOW DO YOU FEEL ABOUT MY BIOGRAPHY?</p></center></h1>
+<div class="rating_scale">
+  <label>
+    <input type="radio" name="rad"/><span>1</span>
+  </label>
+  <label>
+    <input type="radio" name="rad"/><span>2</span>
+  </label>
+  <label>
+    <input type="radio" name="rad"/><span>3</span>
+  </label>
+  <label>
+    <input type="radio" name="rad"/><span>4</span>
+  </label>
+  <label>
+    <input type="radio" name="rad"/><span>5</span>
+  </label>
+  <label>
+    <input type="radio" name="rad"/><span>6</span>
+  </label>
+  <label>
+    <input type="radio" name="rad"/><span>7</span>
+  </label>
+  <label>
+    <input type="radio" name="rad"/><span>8</span>
+  </label>
+  <label>
+    <input type="radio" name="rad"/><span>9</span>
+  </label>
+  <label>
+    <input type="radio" name="rad"/><span>10</span>
+  </label>
+  <p>Not satisfied&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Satisfied</p>
+</div>
+<div class="button1">
+<input type="submit" value="Submit" onClick="testbutton(form);">
+</div>
+
+<br>
+<h1><center><p>IS THERE ANYTHING YOU WOULD LIKE TO SHARE?</p></center></h1>
+
+<div class="feedbacks">
+<textarea type="text" name="comment" rows = "3"
+                  cols = "70" placeholder="TYPE YOUR FEEDBACKS HERE"></textarea>
+</div>
+<div class="button2">
+<input type="submit" value="Submit" onClick= "validate1();">
+</div>
+
+<h1><center><p>DO DROP YOUR SOCIAL MEDIA ID HERE</p></center></h1>
+
+<div class="feedbacks">
+<textarea type="text" name="feedbacks2" rows = "3"
+                  cols = "70" placeholder="TYPE YOUR ID HERE"></textarea>
+                <div class="button3">
+                  <input type="submit" value="Submit" onClick="validate();"></div><br><br>
+
+<p><center>Click<a onclick ="myConfirm2()" style="color:blue;"> here </a>to go to my Twitter account</center></p></div><br>
+
+
+<h1><center><p>DRAG AND DROP THE HEART IF YOU LIKE MY BIOGRAPHY</p></center></h1>
+
+<center><div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></center>
+  <img src="heart.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="70">
+</div>
+
+
+
+<div class="back">
+
+<input type="button" value="Finish Attempt" onClick="myConfirm1();">
+
+</div>
+</form>
+</body>
+</html>

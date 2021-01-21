@@ -1,0 +1,146 @@
+
+<html>
+ <head>
+ <meta charset="utf-8">
+ <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+ <link rel="stylesheet" href="style.css">
+ <title>My Biography</title>
+</head>
+<body>
+     
+	<div class="box">
+		
+<h1> SONG </h1>
+<svg id="svgelem" height="8">
+ <line x1="0" y1="0" x2="400" y2="0" style="stroke:purple;stroke-width:5"/>
+ </svg>
+ 
+<audio controls>
+
+  <source src="RASA SAYANG Lyrics -- Malaysian Folk Song.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+<body>
+<h2>KARAOKE TIME</h2>
+<video width="320" height="240" controls>
+  <source src="y2mate.com - SAKIT - Yonny ft. Zynakal [lirik video]_480p.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+<head>
+<style>
+#div1 {
+  width: 350px;
+  height: 70px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
+}
+</style>
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+<body>
+
+<p>Please help me to drag " Hello " into the rectangle &#128150; </p>
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<br>
+<img id="drag1" src="hello.gif" draggable="true" ondragstart="drag(event)" width="336" height="69">
+</body>
+
+<h2>FEEDBACK</h2>
+ <svg id="svgelem" height="40">
+ <polygon points="-10,10 300,10, 150,50" fill="purple" />
+ </svg>
+
+ 
+<form action="/action_page.php">
+  <label for="fname">Name:</label><br>
+  <input type="text" id="fname" name="fname"><br><br>
+
+</form>
+<form name="myform">
+<input type="button" value="Send" onClick="window.alert('Thank you for your feedback.'); ">
+</form>
+
+<form action="/action_page.php">
+  <textarea name="message" style="width:200px; height:60px;">Comment here !</textarea>
+  <br>
+
+</form>
+<form name="myform">
+<input type="button" value="Send" onClick="window.alert('Thank you for your comment.'); ">
+</form>
+
+<form>
+  <center><p> Do you like my biography ? </p></center>
+
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">&#128150;</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">&#128148;</label><br>
+
+</form> 
+
+<center><p> STAY SAFE ! SPREAD WITH LOVE</p></center>
+
+<canvas id="mycanvas" width="250" height="200" style="border:2px solid #d3d3d3;"></canvas>
+	
+	<script>
+		var c = document.getElementById("mycanvas");
+		var ctx = c.getContext("2d");
+		ctx.beginPath();
+		ctx.moveTo(75,40);
+
+
+		ctx.bezierCurveTo(75,37,70,25,50,25);
+		ctx.bezierCurveTo(20,25,20,62.5,20,62.5);
+
+		ctx.bezierCurveTo(20,80,40,102,75,120);
+		ctx.bezierCurveTo(110,102,130,80,130,62.5);
+
+		ctx.bezierCurveTo(130,62.5,130,25,100,25);
+		ctx.bezierCurveTo(85,25,75,37,75,40);
+		
+		
+		ctx.fill();
+	</script>
+	
+	<head><title>Quick Quiz</title></head> 
+<body> 
+<script type="text/javascript"> 
+var x=5*5; 
+x=prompt("What is 5 x 5?"); 
+while (x != 25) 
+{ 
+alert("Wrong answer"); 
+x=prompt("What is 5 x 5?",0); 
+} 
+document.write("Correct, the answer is " + x) 
+</script> 
+
+<p>
+	
+	<center><button><a href="Form.html">NEXT PAGE</button></center>
+</p>
+</body>
+
+</body>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Bio</title>
+   <script type="text/javascript"> 
+
+    function validate()
+{
+         if(document.getElementById('fname').value == '') 
+         {      
+        alert("Please Provide Name!");
+              document.getElementById('fname').focus();
+        return false;       
+        }
+         else if(document.getElementById('lname').value == '')
+         {      
+        alert("Please Provide Name!");
+               document.getElementById('lname').focus();
+        return false;       
+        }
+         else if(document.getElementById('gender').value == '') 
+         {      
+        alert("Please Provide Gender!");
+              document.getElementById('gender').focus();
+        return false;       
+        }
+         else if(document.getElementById('email').value == '') 
+         {      
+        alert("Please Provide Email!");
+              document.getElementById('email').focus();
+        return false;       
+        }
+         else if(document.getElementById('feedbacks').value == '') 
+         {      
+        alert("Please Provide Feedback!");
+              document.getElementById('feedbacks').focus();
+        return false;       
+        }
+         else
+          alert("Thank you for the feedback. Click OK to send another feedback."); 
+           return true;
+}
+
+function myConfirm(){ 
+var answer = confirm("Thank you for the feedback. Click OK to send another feedback."); 
+if(answer) 
+{  } 
+else 
+ { } 
+} 
+</script>
+<style>
+   body{
+      background-image: url('bg.jpg');
+    }
+
+input[type=text], select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 6px 10px;
+  margin: 8px 0;
+  border: none;
+  border-radius:2px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 10px;
+  text-align: center;
+}
+
+ .tittle{
+  background-color: lightgrey;
+  width: 1000px;
+  border: 15px;
+  padding: 50px;
+  margin: 5px; 
+  font-size: 20px;
+
+}
+
+.button {
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 3px 1px;
+  cursor: pointer;
+  top:105%;
+  left:43.5%;
+  position:absolute;
+
+}
+#div1, #div2 {
+  float: left;
+  width: 100px;
+  height: 35px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+</style>
+<script>
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+}
+</script>
+</head>
+<body>
+
+<h3><center><div class="title">DON'T FORGET TO LEAVE YOUR FEEDBACK!</div><center></h3>
+
+<div>
+  <form>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Enter your first name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Enter your last name..">
+
+    <label for="gender">Gender</label>
+    <select id="gender" name="gender">
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+    </select>
+
+     <label for="email">Email</label>
+    <input type="text" id="email" name="email" placeholder="Enter your email address..">
+
+    <label for="feedbacks">Feedback</label>
+    <input type="text" id="feedbacks" name="feedbacks" placeholder="Enter your feedback..">
+
+    <center><p>Drag and Drop before you submit</p></center>
+
+<div style="width:400px; margin:auto; position:relative;">
+
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="do.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="41">
+</div>
+
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+</div>
+
+  
+    <input type="submit" onClick="validate();" value="Submit">
+  </form>
+</div>
+
+<div>
+  <p><center>For further enquires, you can contact me <a href="https://www.instagram.com/invites/contact/?i=dkkoulxgvzzd&utm_content=vy44m0"> here</a></center></p> 
+ <input class="button" onclick="window.location='index.html'" value="BACK"/>
+</body>
+</html>

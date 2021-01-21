@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+       <style>
+
+      .container 
+       {
+
+         width: 80%;
+         margin: 0 auto;
+       }
+
+      header
+       {
+         background: black;
+       }
+
+      header::after 
+       {
+         content: '';
+         display: table;
+         clear: both;
+
+       }
+
+       nav ul 
+       {
+         margin: 0;
+         padding: 0;
+         list-style: none;
+       }
+
+       nav li
+       {
+          display: inline-block;
+          margin-left: 70px;
+          padding-top: 50px;
+          position: relative;
+       }
+
+       nav a 
+       {
+          color: #ffffff;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-size: 15px;
+       }
+
+       nav a:hover 
+       {
+         color:grey;
+           font-size: 20px;
+       }
+
+       nav a::before 
+       {
+         content: '';
+         display: block;
+         height: 5px;
+         background-color: #ffffff;
+         position: absolute;
+         top: 0;
+         width: 0%;
+         transition: all ease-in-out 250ms;
+       }
+
+       nav a:hover::before
+       {
+         width: 100%;
+       }
+        
+        .logo img{
+            position: absolute;
+            margin-top: 0px;
+            margin-left: 10px;
+            width: 14%;
+            height: auto;
+        }
+
+</style>
+   
+</style>
+</head>
+<body>
+
+  <div class="logo"><h1><img src="img/MHSTitle.png" alt="MHSTitle"></h1></div> 
+	<header>
+    <div class="container">
+      <nav>
+        <ul> <li style="float:right"><a class="active" href="userhome.php">HOME</a></li>
+           <li style="float:right"><a class="active" href="bot.php">CHAT WITH US</a></li>
+           
+          <li style="float:right"><a class="active" href="appointment.php">MAKE APPOINTMENT</a></li>
+          <li style="float:right"><a class="active" href="request.php">CHECK REQUEST</a></li>
+          <li style="float:right"><a class="active" href="password.php">CHANGE PASSWORD</a></li>
+          <li style="float:right"><a class="active" href="homepage.php">LOGOUT</a></li><li style="float:right"><a class="active" href="covid.php">COVID UPDATES</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>

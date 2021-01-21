@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MySite</title>
+  <style>
+     body
+    {
+      font-family:'Handlee',cursive;
+      margin:0;
+      background-image: url('bj.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;  
+      background-size: cover;
+    }
+
+    div.solid 
+    {
+      
+      color:white;
+      background-color: rgba(0,0,0,0.5);
+      width: 1470px;
+               border: 1px;
+        padding: 15px;
+        margin: 10px; 
+    }
+
+    .back
+    {
+      position:absolute;
+      top:110%;
+      left:15.5%;
+    }
+
+    .back2
+    {
+      position:absolute;
+      top:110%;
+      left:57.5%;
+    }
+
+    input[type=button]
+    {
+      background:none;
+        color:red;
+        background: transparent;
+        background-color: white;
+        border-color: black;
+        padding: 6px 4px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+
+    h1{
+      font-family: Impact, Charcoal, sans-serif;
+      background-color: rgba(0,0,0,0.5);
+    color: white;
+  }
+#svgelem1{
+position: relative;
+left: 50%;
+-webkit-transform: translateX(-40%);
+-ms-transform: translateX(-40%);
+transform: translateX(-40%);
+}
+#svgelem2{
+position: relative;
+left: 80%;
+-webkit-transform: translateX(-40%);
+-ms-transform: translateX(-40%);
+transform: translateX(-40%);
+}
+#svgelem3{
+position: relative;
+left: 50%;
+-webkit-transform: translateX(-40%);
+-ms-transform: translateX(-40%);
+transform: translateX(-40%);
+
+}
+ .column {
+  
+    width: 155px;
+    padding: 10px;
+    display:block;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+  .row::after {
+
+    clear: both;
+    display: table;
+
+    }
+  </style>
+
+
+</head>
+<body>
+  <br>
+<hr><hr>
+<h1><center><p>MY BIOGRAPHY</p></center></h1>
+<div class="image-container">
+<div class="solid">
+<h2>
+  <p>My name is Previna Munuganan and I was born on April, 1999. I reside in Sungai Siput, Perak. I hail from a moderate family. My family includes me, my parents and my two brothers. I'm the youngest child in my family. After school, I did my matriculation in Selangor Matriculation College. Currently, I'm a student in Universiti Teknologi Malaysia Melaka completing my Bachelor's degree in Artificial Intelligence. </p>
+
+<p>I love learning, collecting, researching and developing new skills. Some of these skills have proven useful in my life and some are just for me to enjoy. My developed skills include making crafts ,diys and also drawing. I have a very keen interest in drawing because it helps me to relax my mind and also relieve stress. Apart from that, I enjoy reading horror storybooks.</p>
+
+<p>Moreover, I'm a pet lover. I have an unconditional love for my pets. I have two dogs in my home and I also take care of the stray cats in my residential area. I love my dogs because they snuggle up, make me feel safe, and love me as much as I love them.</p></h2></div>
+
+<h1><center><p>MY FAVOURITE SONG AND VIDEO</p></center></h1><div class="solid">
+<div style="width:400px; margin:auto; position:relative;">
+  
+  <p><h3>My favourite song is Channa Mereya from Ae Dil Hai Mushkil. There are many songs I love and cherish, but Channa Mereya is a song that I absolutely adore.</h3></p>
+
+  <audio controls>
+  <source src="channa.mpeg" type="audio/mpeg">
+</audio>
+<br>
+ <p><h3>This is one of my favourite diy craft ideas videos.</h3></p>
+
+ <iframe width="420" height="320" src="https://www.youtube.com/embed/_IiRqqSsprg">
+</iframe></div>
+</div>
+
+
+<h1><center><p>MY FAVOURITE CANVAS</p></center></h1>
+<div class="solid">
+  <div style="width:400px; margin:auto; position:relative;">
+    <p><h3>Circle and rectangle are my favourite shapes.Both are beautiful shapes that evokes calmness, peacefulness, and relaxation. </h3></p>
+  <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML canvas tag.</canvas>
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+// Create gradient
+var grd = ctx.createLinearGradient(0,0,200,0);
+grd.addColorStop(0,"red");
+grd.addColorStop(1,"purple");
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(0,0,200,100);
+
+</script>
+
+  <canvas id="myCanvas" width="200" height="100" style="border:0px solid #d3d3d3; position: absolute; left: 100px; top: 0; z-index: 1;">
+Your browser does not support the HTML canvas tag.</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.arc(95,50,40,0,2*Math.PI);
+ctx.stroke();
+</script> 
+</div>
+  </div>
+</div>
+
+
+<h1><center><p>MY FAVOURITE SVG</p></center></h1><div class="solid">
+<div style="width:400px; margin:auto; position:relative;">
+
+ <div class="row">
+  <div class="column">
+<div class="svgelem1">
+<svg id="svgelem1" height="200" xmlns="http://www.w3.org/2000/svg">
+<polygon points="100,10 40,180 190,60 10,60 160,180" fill="lightblue"/></svg>
+<div class="svgelem2">
+<svg id="svgelem2" height="150" xmlns="http://www.w3.org/2000/svg">
+<circle id="redcircle" cx="50" cy="50" r="50" fill="lightblue"/>
+</svg>
+<div class="svgelem3">
+<svg id="svgelem3" height="100" xmlns="http://www.w3.org/2000/svg">
+<ellipse cx="100" cy="50" rx="100" ry="50" fill="lightblue"/>
+</svg>
+</div>
+</div>
+</div>
+
+<div class="back">
+  <input type="button" onclick="window.location='index.html'" value="Previous page"/>
+ </div>
+ <div class="back2">
+  <input type="button" onclick="window.location='form.html'" value="Feedback"/>
+ </div>
+</div>
+</body>
+</html>

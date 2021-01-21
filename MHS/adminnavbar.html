@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+      .container {
+
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    header {
+      background: black;
+    }
+
+    header::after {
+      content: '';
+      display: table;
+      clear: both;
+
+    }
+
+    nav ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    nav li {
+      display: inline-block;
+      margin-left: 70px;
+      padding-top: 25px;
+      position: relative;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: grey;
+      font-size: 20px;
+    }
+
+    nav a::before {
+      content: '';
+      display: block;
+      height: 5px;
+      background-color: #ffffff;
+      position: absolute;
+      top: 0;
+      width: 0%;
+      transition: all ease-in-out 250ms;
+    }
+
+    nav a:hover::before {
+      width: 100%;
+    }
+
+    li a,
+    .dropbtn {
+      display: inline-block;
+      color: #ffffff;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li.dropdown {
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: grey;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #000;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .logo img {
+      position: absolute;
+      margin-top: 0px;
+      margin-left: 10px;
+      width: 20%;
+      height: auto;
+    }
+  </style>
+</style>
+</head>
+<body>
+
+  <div class="logo">
+    <h1><img src="img/MHSTitle.png" alt="MHSTitle"></h1>
+  </div>
+  <header>
+    <div class="container">
+      <nav>
+        <ul>
+          <li style="float:right"><a class="active" href="homepage.php">Logout</a></li>
+          <li style="float:right"><a class="active" href="adminhome.php">Home</a></li>
+          <li style="float:right"><a class="dropbtn" href="doctors.php">Doctors</a></li>
+          <li style="float:right"><a class="active"
+              href="appointmentRecord.php?status=<?php echo 'approve'; ?>">Appointment Record</a></li>
+          <div class="dropdown">
+            <li style="float:right"><a href="" class="dropbtn">Patient</a>
+              <div class="dropdown-content">
+                <a href="registerpatient.php">Register</a>
+                <a href="patientdata.php">Patient Record</a>
+                <a href="report.php">Report</a>
+              </div>
+            </li>
+          </div>
+
+        </ul>
+      </nav>
+    </div>
+  </header>

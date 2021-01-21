@@ -1,0 +1,66 @@
+<html>
+<head>
+<style>
+
+ body
+    {
+      font-family:'Handlee',cursive;
+      
+      background-image: url('bj.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;  
+      background-size: cover;
+    }
+    h1{
+      font-family: Impact, Charcoal, sans-serif;
+      background-color: rgba(0,0,0,0.5);
+    color: white;
+    font-size: 80px;
+    width:400px;
+    left:200px;
+    margin:auto 0;
+
+    }
+
+
+input[type=button]{
+  border: none;
+  color: red;
+  padding: 8px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+    background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+     position:absolute;
+      top:50.60%;
+      left:58.5%;
+ }
+
+</style>
+
+<title>MySite</title>
+<meta charset="utf-8" />
+</head>
+<div style="width:700px; margin:auto; left:-70px; top:130px; position:relative;">
+
+<canvas id="myCanvas" width="680" height="100" style="border:1px solid #000000; background-color:rgba(0,0,0,0.5);font-color:white;">
+</canvas>
+<script>
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+ctx.font = "35px Arial";
+ctx.fillStyle = "white";
+ctx.fillText("THANK YOU FOR VISITING MY PAGE",20,50);
+</script>
+</div>
+<div class="back">
+ 	<input type="button" onclick="window.location='index.html'" value="HOMEPAGE"/>
+ </div>
+
+</body>
+</html>
